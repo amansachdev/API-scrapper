@@ -8,11 +8,11 @@ export class AppService {
   private readonly bot: TelegramBot;
   async getHello(): Promise<any> {
     // Initialize Telegram bot with your API token
-const bot = new TelegramBot('5491902015:AAFDoBjAgw5DjxIRux_BqVWJAfxj9sfH_0I', {
+const bot = new TelegramBot('5745844294:AAH3-WBetKKXsgF_SIWV7eZObbboaQDfmjg', {
   polling: true,
   });
   
-  const chatId = '-973812528';
+  const chatId = '-1001916260144';
   
   // Config
   const config: AxiosRequestConfig = {
