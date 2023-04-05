@@ -1,9 +1,17 @@
-import { Table, Column, Model, PrimaryKey } from 'sequelize-typescript';
+import {
+  Table,
+  Column,
+  Model,
+  PrimaryKey,
+  AutoIncrement,
+  DataType,
+} from 'sequelize-typescript';
 
 @Table
 export class myntra extends Model {
+  @AutoIncrement
   @PrimaryKey
-  @Column
+  @Column(DataType.BIGINT.UNSIGNED)
   id: number;
 
   @Column
