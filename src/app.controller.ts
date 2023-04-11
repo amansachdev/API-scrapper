@@ -6,7 +6,10 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  async getHello(): Promise<any> {
+  async getHello() {
+    setInterval(async () => {
+      await this.appService.getHello();
+    }, 10000);
     return await this.appService.getHello();
   }
 }
